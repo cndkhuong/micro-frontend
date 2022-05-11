@@ -36,7 +36,7 @@ class ReactElement extends HTMLElement {
         break;  
       }
     }
-    mount() {
+    mount = function () {
       const props ={ 
         selectedvalue: this.getAttribute("selectedvalue"),
         toggleval: this.getAttribute("toggle")
@@ -45,7 +45,7 @@ class ReactElement extends HTMLElement {
       
     }
   
-    unmount() {
+    unmount = function() {
       unmountComponentAtNode(this);
     }
   

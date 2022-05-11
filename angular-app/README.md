@@ -1,27 +1,13 @@
-# AngularApp
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+## Build project using ng
+Builds the app for production to the `dist` folder.<br />
+It correctly bundles Angular in production mode and optimizes the build for the best performance.
 
-## Development server
+### `ng build --prod --output-hashing none --single-bundle true`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run webserver with http-server
+In the project directory, you can run:
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### `npm install -g http-server@latest`
+### `http-server ./dist/angular-app -p 5001`
